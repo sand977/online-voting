@@ -1,0 +1,85 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container{
+    width: 100%;
+    height: 100vh;
+    background-color: #f0f2f5;
+    position: relative;
+}
+form{
+    margin-top: 50px;
+}
+.form-box{
+    width: 90%;
+    max-width: 450px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color:white;
+    padding: 50px 60px 70px;
+    text-align: center;
+}
+.form-box h1{
+    font-size: 30px;
+    margin-bottom: 10px;
+}
+
+.input-field{
+    margin: 15px 0;
+    border-radius: 3px;
+    display: flex;
+    align-items: center;
+    background-color: #eaeaea;
+    max-height: 65px;
+    overflow: hidden;
+    border-bottom: 1px solid black;
+}
+input{
+    width: 100%;
+    background: transparent;
+    border: 0;
+    outline: none;
+    color: black;
+    padding: 15px;
+}
+/* input[type="number"]{
+    outline: none;
+    -moz-appearance: textfield;
+}
+input[type="number"]::-webkit-outer-spin-button
+input[type="number"]::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+   
+} */
+
+form p a{
+    text-decoration: none;
+}
+.btn-feild {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+.btn-feild button{
+    flex-basis: 100%;
+    background-color: #4f77ff;
+    color: white;
+    border: 0;
+    outline: 0;
+    transition: background 1s;
+    height: 40px;
+    border-radius: 10px;
+}
+.input-field-role > select{
+    
+    border-radius: 5px;
+    padding: 10px;
+}
+.input-field-role option{
+    padding: 10px;
+}

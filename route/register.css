@@ -1,0 +1,81 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.container{
+    width: 100%;
+    height: 100vh;
+    position: relative;
+    background-color: #f0f2f5;
+}
+.form-box{
+    width: 90%;
+    max-width: 450px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    padding: 50px 60px 70px;
+    background-color: white;
+}
+.input-field{
+    margin: 15px 0;
+    border-radius: 3px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-bottom: 1px solid black;  
+}
+.input-field-img, .input-field-role{
+    display: flex;
+    align-items: center;
+    justify-content: space-around; 
+    width: 100%;
+}
+.input-field-role{
+    padding: 16px;
+    margin-top: 10px;
+}
+.input-field-img input{
+    outline: none;
+    border: none;
+}
+input{
+    width: 100%;
+    background: transparent;
+    border: 0;
+    outline: none;
+    color: black;
+    padding: 15px;
+   
+    
+    
+}
+.input-field-role > select{
+    
+    border-radius: 5px;
+    padding: 10px;
+}
+.input-field-role option{
+    padding: 10px;
+}
+
+.btn-field #register{
+    flex-basis: 100%;
+    width: 50%;
+    background-color: #4f77ff;
+    color: white;
+    border: 0;
+    outline: 0;
+    transition: background 1s;
+    height: 40px;
+    border-radius: 10px;
+}
+
+#src{
+    margin-right: 14px;
+   
+    }
+   

@@ -1,0 +1,329 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<style>
+    *{
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+    .header, .login, .cart, .seller{
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        padding: 5px;
+        text-decoration: none;
+        color: black;
+        font-size: 17px;
+        background-color: white;
+        border: none;
+
+    }
+    .login:hover{
+        background-color: white;
+        color: black;
+        border: none;
+    }
+    .search-for-products, .form input[type=text]{
+        padding: 5px 2em 5px 20px;
+        min-width: 36vw;
+        outline: none;
+        border: none;
+        border-radius: 10px;
+        background-color: #f0f5ff;
+        font-size: 20px;
+        
+
+    }
+    .header input[type=text]:focus{
+        border: none;
+    }
+    .form .search{
+        border: none;
+        background-color: #f0f5ff;
+        font-size: 20px;
+        font-weight: lighter;
+    }
+    .dropdown, .dropdown-2{
+        position: relative;
+        display: inline-block;
+      
+    }
+    .dropdown a, .dropdown-2 a{
+        text-decoration: none;
+        color: black;
+       
+    }
+    .new-customer{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        line-height: 24px;
+        padding: 12px;
+        font-size: 16px;
+        
+    }
+
+    .dropdown-content, .dropdown-content-2 {
+         border-radius: 10px;
+        display: none;
+        position: absolute;
+        right: -12em;
+        background-color: white;
+        min-width: 260px;
+        box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+        z-index: 1;
+    }
+    .dropdown-content ul li{
+        display: block;
+        padding: 10px;
+     
+    }
+    .dropdown-content ul li:hover, .dropdown-content-2 ul li:hover{
+        background-color: #f0f5ff;
+        
+       
+    }
+    .dropdown:hover .dropdown-content, .dropdown-2:hover .dropdown-content-2 {
+        display: block;
+    }
+    .ban .row{
+        justify-content: space-around;
+    }
+    .ban .col-sm-12{
+       display: grid;
+       place-items: center;
+       place-content: center;
+       
+
+    }
+     .ban{
+        font-size: 14px;
+        font-weight: bold;
+        text-align: center;
+
+    }
+    
+    .ban img{
+        padding: 30px;
+        
+    }
+    .ban .dropdown-2 ul li {
+       display: block;
+       padding: 10px;
+       float: left;
+        
+    }
+    
+
+</style>
+<body>
+    <div class="header">
+        <div class="logo">
+            <img src="./fkheaderlogo_exploreplus_mobile-39120d.svg" alt="">
+        </div>
+        <div class="form">
+            <div class="search-for-products">
+                <button class="search">
+                    <a href="">
+                <i class="fa-solid fa-magnifying-glass"></i>
+            </a>
+            </button>
+                <input type="text" placeholder="Search for Prodcuts, Brands and More">
+            </div>
+        </div>
+        <a href="" class="login">
+        <div class="login">
+            <img src="./profile-52e0dc.svg" alt="">
+           
+            <div class="dropdown">
+                <button style="border: none; background-color: white;">
+                    Login
+                </button>
+               <div class="dropdown-content">
+                <div class="new-customer">
+                <p style="margin-top: 10px; font-size: 20px;">New Customer?</p>
+                <a href="#" style="color: rgb(0, 38, 255); font-weight: bold;">Sign Up</a>
+                </div>
+        
+                <hr>
+                <ul style="width:280px">
+                
+                    <li><span style="margin-right: 8px;"><img src="./profile-52e0dc.svg" alt=""></span>  <a href="https://www.flipkart.com/account/login?ret=%2Faccount%2F%3Frd%3D0%26link%3Dhome_account" target="_blank">My Profile</a></li>
+                    <li><span style="margin-right: 8px;"><img src="./flipkart-zone.svg" alt=""></span>  <a href="#">Flipkart Plus Zone</a></li>
+                    <li><span style="margin-right: 8px;"><img src="./order.svg" alt=""></span>  <a href="#">Orders</a></li>
+                    <li><span style="margin-right: 8px;"><img src="./wishlist.svg" alt=""></span>  <a href="#">Wishlist</a></li>
+                    <li><span style="margin-right: 8px;"><img src="./reward.svg" alt=""></span>  <a href="#">Rewards</a></li>
+                    <li><span style="margin-right: 8px;"><img src="./giftcard.svg" alt=""></span>  <a href="#">Gift Cards</a></li>
+               
+                </ul>
+               </div>
+            </div>
+        </a>
+            
+        </div>
+        <div class="cart">
+            <a href="" class="cart">
+            <img src="./header_cart-eed150.svg" alt="">
+            <div class="cart">
+                Cart
+            </div>
+        </a>
+        </div>
+        <div class="seller">
+            <a href="" class="seller">
+            <img src="./Store-9eeae2.svg" alt="">
+            <div class="seller">
+                Become a Seller
+            </div>
+        </a>
+        </div>
+        <div class="dot">
+            <a href="">
+                <img src="./header_3verticalDots-ea7819.svg" alt="">
+            </a>
+        </div>
+        
+        
+    </div>
+    <section class="ban mt-4">
+        <div class="container-fluid">
+            <div class="row">
+             
+                <div class="col-lg-1 col-sm-12">
+                    <div>
+                        <div class="offer">
+                    <img src="./topoffer.webp" alt="">
+                </div>
+                </div>
+                   <span>
+                    <span>
+                        Top Offer
+                    </span>
+                   </span> 
+                   
+                </div>
+                <div class="col-lg-1 col-sm-12">
+                    <div>
+                        <div class="mobile">
+                    <img src="./mobile.webp" alt="">
+                </div>
+                </div>
+                   <span>
+                    <span>
+                        Mobiles & Tablets
+                    </span>
+                   </span> 
+                </div>
+                <div class="col-lg-1 col-sm-12">
+                    <div>
+                        <div class="electronics">
+                    <img src="./electronics.webp" alt="">
+                </div>
+                </div>
+                   <span>
+                    <span>
+                        Electronics
+                    </span>
+                   </span> 
+                </div>
+                <div class="col-lg-1 col-sm-12">
+                    <div>
+                        <div class="tv">
+                    <img src="./tv.webp" alt="">
+                </div>
+                </div>
+                    <span>
+                    <span class="tv">
+                        TVs & Appliances
+                    </span>
+                </span>
+                   
+                </div>
+                <div class="col-lg-1 col-sm-12">
+                    <div class="dropdown-2">
+                    <div>
+                        <div class="fashion">
+                    <img src="./fashion.webp" alt="">
+                </div>
+                </div>
+                   <span>
+                    <span>
+                       
+
+                         
+                <button style="border: none; background-color: white;">
+                    Fashion
+                </button>
+               <div class="dropdown-content-2">
+                <ul style="width:200px">
+                
+                    <li><a href="#" target="_blank">Men's Top Wear</a></li>
+                    <li><a href="#">Men's Bottom Wear</a></li>
+                    <li><a href="#">Women Ethnic</a></li>
+                    <li><a href="#">Women Western</a></li>
+                    <li><a href="#">Men's Footwear</a></li>
+                    <li><a href="#">Women Footwear</a></li>
+                    <li><a href="#">Watches & Accessories</a></li>
+                    <li><a href="#">Bags, Suitcases & Luggages</a></li>
+                    <li><a href="#">Kids</a></li>
+                    <li><a href="#">Essentials</a></li>
+               
+                </ul>
+               </div>
+            </div>
+                    </span>
+                   </span> 
+                </div>
+                <div class="col-lg-1 col-sm-12">
+                    <div>
+                        <div class="furniture">
+                    <img src="./furniture.webp" alt="">
+                </div>
+                </div>
+                   <span>
+                    <span>
+                        Furniture
+                    </span>
+                   </span> 
+                </div>
+                <div class="col-lg-1 col-sm-12">
+                    <div>
+                        <div class="flights">
+                    <img src="./flight.webp" alt="">
+                </div>
+                </div>
+                   <span>
+                    <span>
+                        Flights
+                    </span>
+                   </span> 
+                </div>
+                <div class="col-lg-1 col-sm-12">
+                    <div>
+                        <div class="grocery">
+                    <img src="./grocery.webp" alt="">
+                </div>
+                </div>
+                   <span>
+                    <span>
+                        Grocery
+                    </span>
+                   </span> 
+                </div>
+               
+            </div>
+        </div>
+    </section>
+    
+    
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+</body>
+</html>
+ 
